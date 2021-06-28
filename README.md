@@ -58,9 +58,9 @@ Show us a snippet of JSON returned by your Airtable (you can find it under the A
 
 
 #### MVP 
-- use axios get request to display a list of books in the Tiny Library from the Airtable API
-- display form for users to add a Title and Author for a book they are donating and a field for a short review or recommendation
-- provide a delete button for each book so that users can delete the record in the Airtable database when they take a book from the Library
+- use an axios get request to display a list of books in the Tiny Library from the Airtable API
+- display a form for users to add a Title and Author for a book they are donating and a field for a short review or recommendation
+- provide a delete button for each book so that users can delete the record in the Airtable database with axios when they take a book from the Library
 
 #### PostMVP  
 - allow users to select from multiple Tiny Libraries and view catalogue information for each Library
