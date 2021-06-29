@@ -93,7 +93,6 @@ Sample json from Airtable database:
 | More refined CSS | M | 2.5 hrs|  |  |
 | Add Libraries table in database and link books to libraries (post-MVP) | H | 3 hrs|  |  |
 | Add Map feature (post-MVP) | M | 3 hrs|  |  |
-
 | Researching a 2nd API (post-MVP) | L | 1 hr|  |  |
 | Adding 2nd API for additional information and search feature (post-MVP) | L | 3 hrs |  |  |
 | Total |  | 15.5 hrs|  |  |
