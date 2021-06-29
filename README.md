@@ -104,10 +104,13 @@ Sample json from Airtable database:
 ## SWOT Analysis
 
 ### Strengths:
-
+Well-defined MVP; starightforward plan for building features.
 
 ### Weaknesses:
+The accuracy of the database depends on user interactions with the app; inaccurate data could make users not want to use the app.
 
 ### Opportunities:
+The app could make book sharing more valuable.
 
 ### Threats:
+User-generated data is unpredictable and could include errors.
