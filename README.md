@@ -1,3 +1,4 @@
+<!-- CODENAME: BANANA -->
 # Project Overview
 
 ## Project Name
@@ -8,49 +9,55 @@ Tiny Library App
 This app will create a catalogue for a Tiny Library where users can donate or take books. Using an Airtable API, the app will allow users to: 
 - browse a catalogue of books in the Tiny Library
 - add a record when they donate a book to the Tiny Library
-- delete a record 
+- delete a record when they take a book from the Library
 ## Wireframes
-
-
+![wireframe 1](/assets/homepage.png)
+![wireframe 2](/assets/library-page.png)
+![wireframe 3](assets/about-page.png)
+![wireframe 4](assets/desktop-wireframe.png)
 ## Component Hierarchy
-Show your component hierarchy here! Use [this](https://cms-assets.tutsplus.com/uploads/users/1795/posts/30352/image/GettingStartedWithReduxTutorial-React-Component-Structure.png) as an example.
+![component hierarchy](assets/component-hierarchy.png)
 
 ## API and Data Sample
-
-Show us a snippet of JSON returned by your Airtable (you can find it under the API documentation) so we know you can access it and get the info you need. This __must__ be properly formatted. An example is below:
+Sample json from Airtable database:
 
 ```json
 {
     "records": [
         {
-            "id": "recONRzIUTuZ5lXaF",
+            "id": "recTabfp2VKpQwrqp",
             "fields": {
-                "author": "Liz Yrineo",
-                "setup": "Why did the tomato turn red?",
-                "punchline": "Because it saw the salad dressing!"
+                "title": "The Communist Manifesto",
+                "author-last": "Marx",
+                "author-first": "Karl",
+                "second-author-last": "Engels",
+                "second-author-first": "Frederick",
+                "recommendation": "the most important document of the 19th century"
             },
-            "createdTime": "2020-11-30T16:03:09.000Z"
+            "createdTime": "2021-06-28T22:35:24.000Z"
         },
         {
-            "id": "rec3oYZ5Tp0AIDsKe",
+            "id": "rectcuYTabv20MdR0",
             "fields": {
-                "author": "Rachel Moskowitz",
-                "setup": "What did the green grape say to the red grape?",
-                "punchline": "Breathe, idiot, breathe!"
+                "title": "State and Revolution",
+                "author-last": "Lenin",
+                "author-first": "Vladimir",
+                "recommendation": "bruh, if you want to overthrow the state, you better know what the state is first!"
             },
-            "createdTime": "2020-11-30T16:03:09.000Z"
+            "createdTime": "2021-06-28T22:35:24.000Z"
         },
         {
-            "id": "recA34tOaoE1IVeC1",
+            "id": "recgGU2UUiJqWuWLz",
             "fields": {
-                "author": "Gary Grant",
-                "setup": "How do you make holy water?",
-                "punchline": "You boil the hell out of it!"
+                "title": "Social Reform or Revolution?",
+                "author-last": "Luxemburg",
+                "author-first": "Rosa",
+                "recommendation": "reforming the current system? overthrowing it entirely? can we do both? still so relevant today"
             },
-            "createdTime": "2020-11-30T16:03:09.000Z"
+            "createdTime": "2021-06-28T22:35:24.000Z"
         }
     ],
-    "offset": "recA34tOaoE1IVeC1"
+    "offset": "recgGU2UUiJqWuWLz"
 }
 ```
 
@@ -65,38 +72,39 @@ Show us a snippet of JSON returned by your Airtable (you can find it under the A
 #### PostMVP  
 - allow users to select from multiple Tiny Libraries and view catalogue information for each Library
 - display multiple Tiny Libraries on a map
-- allow user to search through multiple Tiny Library catalogues by author, title, and other criteria such as genre or review keywords
+- use another API to fill in additional information about books in the catalogue and potentially to correct spelling or other errors in user-generated data
+- add a feature that allows user to search through multiple Tiny Library catalogues by author, title, and other criteria such as genre or review keywords
 
 
 ## Project Schedule
 
-This schedule will be used to keep track of your progress throughout the week and align with our expectations. Here's an example.
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|July 10-12| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete
-|July 13| Project Approval | Incomplete
-|July 13| Core Application Structure (HTML, CSS, etc.) | Incomplete
-|July 14| Pseudocode / actual code | Incomplete
-|July 15| Initial Clickable Model  | Incomplete
-|July 16| MVP | Incomplete
-|July 17| Presentations | Incomplete
+|June 28| Prepare project pitch and Readme; Set up Airtable Database | Complete
+|June 29| Project Approval; pseudo-code and begin coding basic structure | Incomplete
+|June 30-July 1| Complete code and debugging; CSS styling  | Incomplete
+|July 2| Moring: finish CSS tweaks; Deploy by 12:30 | Incomplete
+|July 7| Presentation  | Incomplete
+
 
 ## Timeframes
 
-Tell us how long you anticipate spending on each area of development. Be sure to consider how many hours a day you plan to be coding and how many days you have available until presentation day.
-
-Time frames are also key in the development cycle.  You have limited time to code all parts of your app.  Your estimates can then be used to evalute possibilities based on time needed and the actual time you have before the app must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add an additional hour or two to each component to play it safe. Throughout your project, keep track of your Time Invested and Actual Time and update your README regularly.
-
-| Component | Priority | Estimated Time | Time Invested | Actual Time |
+| Task | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Adding Form | H | 3hrs| 3.5hrs | 3.5hrs |
-| Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
-| Total | H | 6hrs| 5hrs | 5hrs |
+| Pseudocoding & coding basic app | H | 3hrs| |  |
+| Basic CSS | H | 1 hr|  |  |
+| Debugging | H | 2 hrs|  |  |
+| More refined CSS | M | 2.5 hrs|  |  |
+| Adding Map feature (post-MVP) | M | 3 hrs|  |  |
+| Researching a 2nd API (post-MVP) | L | 1 hr|  |  |
+| Adding 2nd API for additional information and search feature (post-MVP) | L | 3 hrs |  |  |
+| Total |  | 15.5 hrs|  |  |
 
 ## SWOT Analysis
 
 ### Strengths:
+
 
 ### Weaknesses:
 
