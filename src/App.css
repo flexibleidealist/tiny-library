@@ -1,0 +1,57 @@
+body {
+  background-color: rgb(235, 216, 195);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+button {
+  max-width: 100px;
+  margin: 10px;
+}
+.nav-menu {
+  display: flex;
+  justify-content: space-around;
+}
+
+.library {
+  border: 2px solid black;
+  border-radius: 10px;
+  max-width: 150px;
+  margin: 20px;
+  text-align: center;
+}
+
+.title {
+  font-style: italic;
+  margin-right: 20px;
+}
+.catalogue {
+  display: flex;
+  flex-direction: column;
+
+}
+.book {
+  display: flex;
+  justify-content: space-between;
+  width: fit-content;
+  margin: 5px 5px 5px 30px;
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 8px;
+}
+
+.app-name {
+  color: rgb(24, 138, 245)
+}
+.add-form {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+#about-info {
+  margin: 30px;
+  padding: 10px;
+  text-align: justify;
+}

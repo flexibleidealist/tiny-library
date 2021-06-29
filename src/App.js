@@ -19,7 +19,7 @@ function App() {
           <AddForm />
         </Route>
         <Route path="/about">
-          <p id="about-info"><span className="app-name">tiny library</span> is a free neighborhood-based book sharing program. Anyone can donate or take books for free.<br></br>Click on a library to browse a catalogue of the books currently in the library.<br></br>When you donate a book, use this app to update the catalogue. Follow the "Leave a Book!" link and fill out the form.<br></br>When you take a book home, click on the "Take it!" button on the individual book page to delete it from the catalogue.</p>
+          <p id="about-info"><span className="app-name">tiny library</span> is a neighborhood-based book sharing program. Anyone can donate or take books for free.<br></br>Click on a library to browse a catalogue of the books currently in the library.<br></br>When you donate a book, follow the "Leave a Book!" link, fill out the form, and click "Leave It!" to add your donation to the catalogue.<br></br>When you take a book home, click on the "Take it!" button on the book's details page to delete it from the catalogue.</p>
         </Route>
         <Route path="/library-catalogue">
           <Catalogue />

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useHistory } from "react-router-dom";
 import { baseURL, config } from "../services";
 import axios from "axios";
 
@@ -6,6 +7,7 @@ function AddForm() {
   const [title, setTitle] = useState("");
   const [author, setAuthor] = useState("");
   const [recommendation, setRecommendation] = useState("");
+  const history = useHistory();
   // return input form for Title, Author, and Recommendation
   // axios post request to add record of book donated
   // useEffect to update catalogue
@@ -16,12 +18,17 @@ function AddForm() {
       const newBook = {
         title,
         author,
+        recommendation,
       }
-      await axios.post(baseURL, { fields:  newBook }, config)
+      await axios.post(baseURL, { fields:  newBook }, config);
+
+      setTimeout(() => {
+        history.push("/library-catalogue");
+      }, 800);
     }
   
   return (
-    <form onSubmit={addBook}>
+    <form className="add-form" onSubmit={addBook}>
       <label htmlFor="title-input">Title: </label>
       <input 
         type="text" 

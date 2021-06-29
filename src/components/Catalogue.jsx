@@ -14,13 +14,15 @@ function Catalogue() {
   }, []);
 
   return (
-    books.map((book)=> (
-    <div className="book" key={book.id}>
-      <h3 className="title">{book.fields.title}</h3>
-      <h2 className="author">{book.fields.author}</h2>
-    </div>
-    )
-    )
+    <section className="catalogue">
+    {books.map((book)=> (
+      <div className="book" key={book.id}>
+        <h3 className="title">{book.fields.title}</h3>
+        <h4 className="author">{book.fields.author}</h4>
+      </div>))}
+    </section>
+    
+  
   )
 }
 
