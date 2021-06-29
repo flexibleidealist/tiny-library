@@ -12,7 +12,7 @@ This app will create a catalogue for a Tiny Library where users can donate or ta
 - delete a record when they take a book from the Library
 ## Wireframes
 ![wireframe 1](/assets/homepage.png)
-![wireframe 2](/assets/library-page.png)
+![wireframe 2](/assets/wireframe-take-it.png)
 ![wireframe 3](assets/about-page.png)
 ![wireframe 4](assets/desktop-wireframe.png)
 ## Component Hierarchy
