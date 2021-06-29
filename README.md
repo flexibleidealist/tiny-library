@@ -27,32 +27,27 @@ Sample json from Airtable database:
         {
             "id": "recTabfp2VKpQwrqp",
             "fields": {
-                "title": "The Communist Manifesto",
-                "author-last": "Marx",
-                "author-first": "Karl",
-                "second-author-last": "Engels",
-                "second-author-first": "Frederick",
-                "recommendation": "the most important document of the 19th century"
+                "author": "Karl Marx, Frederick Engels",
+                "recommendation": "the most important document of the 19th century",
+                "title": "The Communist Manifesto"
             },
             "createdTime": "2021-06-28T22:35:24.000Z"
         },
         {
             "id": "rectcuYTabv20MdR0",
             "fields": {
-                "title": "State and Revolution",
-                "author-last": "Lenin",
-                "author-first": "Vladimir",
-                "recommendation": "bruh, if you want to overthrow the state, you better know what the state is first!"
+                "author": "Vladimir Lenin",
+                "recommendation": "bruh, if you want to overthrow the state, you better know what the state is first!",
+                "title": "State and Revolution"
             },
             "createdTime": "2021-06-28T22:35:24.000Z"
         },
         {
             "id": "recgGU2UUiJqWuWLz",
             "fields": {
-                "title": "Social Reform or Revolution?",
-                "author-last": "Luxemburg",
-                "author-first": "Rosa",
-                "recommendation": "reforming the current system? overthrowing it entirely? can we do both? still so relevant today"
+                "author": "Rosa Luxemburg",
+                "recommendation": "reforming the current system? overthrowing it entirely? can we do both? still so relevant today",
+                "title": "Social Reform or Revolution?"
             },
             "createdTime": "2021-06-28T22:35:24.000Z"
         }
@@ -96,7 +91,9 @@ Sample json from Airtable database:
 | Basic CSS | H | 1 hr|  |  |
 | Debugging | H | 2 hrs|  |  |
 | More refined CSS | M | 2.5 hrs|  |  |
-| Adding Map feature (post-MVP) | M | 3 hrs|  |  |
+| Add Libraries table in database and link books to libraries (post-MVP) | H | 3 hrs|  |  |
+| Add Map feature (post-MVP) | M | 3 hrs|  |  |
+
 | Researching a 2nd API (post-MVP) | L | 1 hr|  |  |
 | Adding 2nd API for additional information and search feature (post-MVP) | L | 3 hrs |  |  |
 | Total |  | 15.5 hrs|  |  |
