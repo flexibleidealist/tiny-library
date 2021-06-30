@@ -3,7 +3,7 @@ import { useHistory } from "react-router-dom";
 import { baseURL, config } from "../services";
 import axios from "axios";
 
-function AddForm() {
+function AddForm(props) {
   const [title, setTitle] = useState("");
   const [author, setAuthor] = useState("");
   const [recommendation, setRecommendation] = useState("");
@@ -21,7 +21,7 @@ function AddForm() {
         recommendation,
       }
       await axios.post(baseURL, { fields:  newBook }, config);
-
+      props.setToggleFetch((curr)=>!curr);
       setTimeout(() => {
         history.push("/library-catalogue");
       }, 800);
