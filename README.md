@@ -77,7 +77,7 @@ Sample json from Airtable database:
 |  Day | Deliverable | Status
 |---|---| ---|
 |June 28| Prepare project pitch and Readme; Set up Airtable Database | Complete
-|June 29| Project Approval; pseudo-code and begin coding basic structure | Incomplete
+|June 29| Project Approval; pseudo-code and begin coding basic structure | Complete
 |June 30-July 1| Complete code and debugging; CSS styling  | Incomplete
 |July 2| Moring: finish CSS tweaks; Deploy by 12:30 | Incomplete
 |July 7| Presentation  | Incomplete
@@ -87,9 +87,9 @@ Sample json from Airtable database:
 
 | Task | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Pseudocoding & coding basic app | H | 3hrs| |  |
-| Basic CSS | H | 1 hr|  |  |
-| Debugging | H | 2 hrs|  |  |
+| Pseudocoding & coding basic app | H | 3hrs| 4 hrs  | 4.5 hrs |
+| Basic CSS | H | 1 hr| 1 hr | 1 hr |
+| Debugging | H | 2 hrs| 3 hrs | 3 hrs |
 | More refined CSS | M | 2.5 hrs|  |  |
 | Add Libraries table in database and link books to libraries (post-MVP) | H | 3 hrs|  |  |
 | Add Map feature (post-MVP) | M | 3 hrs|  |  |
