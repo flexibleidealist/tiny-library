@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
+import Book from "./Book";
 import { baseURL, config } from "../services";
 
 function Catalogue() {
@@ -16,10 +17,8 @@ function Catalogue() {
   return (
     <section className="catalogue">
     {books.map((book)=> (
-      <div className="book" key={book.id}>
-        <h3 className="title">{book.fields.title}</h3>
-        <h4 className="author">{book.fields.author}</h4>
-      </div>))}
+      <Book key={books.id} book={book} />
+    ))}
     </section>
     
   

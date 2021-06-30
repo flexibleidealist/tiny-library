@@ -4,6 +4,7 @@ import NavMenu from "./components/NavMenu";
 import Catalogue from "./components/Catalogue";
 import AddForm from './components/AddForm';
 import './App.css';
+import { baseURL } from './services';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path="/library-catalogue">
           <Catalogue />
         </Route>
+        <Route path={`${baseURL}/book/:id`} ></Route>
       </main>
     </div>
   );
