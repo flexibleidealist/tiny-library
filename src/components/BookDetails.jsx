@@ -21,13 +21,17 @@ function BookDetails(props) {
 
   if (bookToDisplay) {
   return (
-    <div className="book-details">
-      <h2 className="title">{bookToDisplay.fields.title}</h2>
-      <h3>{bookToDisplay.fields.author}</h3>
-      <h4>Here's what a neighbor says about this book:</h4>
-      <p>{bookToDisplay.fields.recommendation}</p>
-      <button onClick={backToCatalogue}>Back to Catalogue</button>
-      <button onClick={deleteBook}>Take It!</button>
+    <div >
+      <section className="book-details">
+        <h2 className="title">{bookToDisplay.fields.title}</h2>
+        <h3>{bookToDisplay.fields.author}</h3>
+        <h4>Here's what a neighbor says about this book:</h4>
+        <p>{bookToDisplay.fields.recommendation}</p>
+      </section>
+      <section id="button-section">
+        <button onClick={backToCatalogue}>Back to Catalogue</button>
+        <button onClick={deleteBook}>Take It!</button>
+      </section>
     </div>
   )
   } else {
