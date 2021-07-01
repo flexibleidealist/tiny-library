@@ -15,15 +15,16 @@ function App() {
   const [toggleFetch, setToggleFetch] = useState(true);
   useEffect(() => {
     const fetchBooks = async () => {
-      const resp = await axios.get(`${baseURL}/tiny%20library%201`, config);
-      setBooks(resp.data.records);
+      const respBooks = await axios.get(`${baseURL}/tiny%20library%201`, config);
+      setBooks(respBooks.data.records);
     }
     fetchBooks();
   }, [toggleFetch]);
+
   useEffect(() => {
     const fetchLibraries = async () => {
-      const resp = await axios.get(`${baseURL}/libraries`, config);
-      setLibraries(resp.data.records);
+      const respLibraries = await axios.get(`${baseURL}/libraries`, config);
+      setLibraries(respLibraries.data.records);
     }
     fetchLibraries();
   }, []);
@@ -50,7 +51,7 @@ function App() {
             <p>When you take a book home, click on the "Take it!" button on the book's details page to delete it from the catalogue.</p>
           </div>
         </Route>
-        <Route path="/library-catalogue">
+        <Route path="/library-catalogue/:id">
           <Catalogue books={books}/>
         </Route>
         <Route path="/book/:id">
