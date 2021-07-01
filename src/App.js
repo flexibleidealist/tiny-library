@@ -11,14 +11,22 @@ import { baseURL, config } from './services';
 
 function App() {
   const [books, setBooks] = useState([]);
+  const [libraries, setLibraries] = useState([]);
   const [toggleFetch, setToggleFetch] = useState(true);
   useEffect(() => {
     const fetchBooks = async () => {
-      const resp = await axios.get(baseURL, config);
+      const resp = await axios.get(`${baseURL}/tiny%20library%201`, config);
       setBooks(resp.data.records);
     }
     fetchBooks();
   }, [toggleFetch]);
+  useEffect(() => {
+    const fetchLibraries = async () => {
+      const resp = await axios.get(`${baseURL}/libraries`, config);
+      setLibraries(resp.data.records);
+    }
+    fetchLibraries();
+  }, []);
 
   return (
     <div>
@@ -27,7 +35,9 @@ function App() {
       </section>
       <main>
         <Route exact path="/">
-          <Library />
+          {libraries.map((library) => (
+            <Library key={library.id} library={library}/>
+          ))}
         </Route>
         <Route path="/add">
           <AddForm setToggleFetch={setToggleFetch} />

@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
-function Library() {
+function Library(props) {
   return (
     <div className="library">
-      <h2>Location</h2>
+      <h2>{props.library.fields.location}</h2>
       <Link to="/library-catalogue">
         <h2>Catalogue</h2>
       </Link>

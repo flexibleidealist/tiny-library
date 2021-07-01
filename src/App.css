@@ -1,7 +1,9 @@
-
+:root {
+  --app-blue: rgb(42, 236, 250);
+}
 
 body {
-  background-color: rgb(72, 84, 84);
+  background-color: rgb(49, 56, 56);
 }
 
 a {
@@ -15,9 +17,11 @@ label {
 button {
   max-width: 150px;
   margin: 10px;
-  border: 1px solid black;
+  border: 2px solid var(--app-blue);
   border-radius: 4px;
-  padding: 4px;
+  padding: 8px;
+  background: none;
+  color: white;
 }
 .nav-menu {
   display: flex;
@@ -25,20 +29,20 @@ button {
 }
 
 .library {
-  border: 2px solid black;
-  border-radius: 10px;
+  border: 2px solid var(--app-blue);
+  border-radius: 8px;
   max-width: 200px;
   margin: 55px;
   text-align: center;
-  background: rgb(42, 236, 250);
+  color: white;
 }
 
 .library a {
-  color: black;
+  color: white;
 }
 
 .library a:hover {
-  border: 2px solid white;
+  color: var(--app-blue);
 }
 
 .title {
@@ -60,7 +64,8 @@ button {
 }
 .book:hover {
   border: 2px solid white;
-  margin-right: 45px;
+  margin-right: 40px;
+  transition: all;
 }
 
 .book {
@@ -70,8 +75,9 @@ button {
   width: fit-content;
   min-width: 375px;
   margin: 2px 30px;
-  border: 1px solid black;
+  border: 2px solid black;
   border-radius: 4px;
+  box-sizing: border-box;
   padding: 2px 12px;
 }
 
@@ -83,6 +89,7 @@ button {
 .book .author {
   font-size: 18px;
 }
+/* colors for assigning random color to book elements */
 .black {
   background: linear-gradient(rgb(66, 66, 66), rgb(24, 22, 22));
   color: rgb(250, 199, 33);
@@ -104,16 +111,15 @@ button {
   color: rgb(250, 249, 248);
 }
 .brown {
-  background: linear-gradient(rgb(129, 93, 28), rgb(116, 68, 5));
+  background: linear-gradient(rgb(157, 114, 35), rgb(116, 68, 5));
   color: whitesmoke;
 }
-
 .red-brown {
-  background: linear-gradient(rgb(99, 40, 40), rgb(99, 4, 4));
+  background: linear-gradient(rgb(119, 55, 55), rgb(83, 3, 3));
   color: whitesmoke;
 }
 .red {
-  background: linear-gradient( rgb(235, 52, 52), rgb(158, 27, 27));
+  background: linear-gradient( rgb(245, 64, 64), rgb(158, 27, 27));
   color: rgb(221, 220, 220);
 }
 .purple {
@@ -130,7 +136,7 @@ button {
 }
 
 .app-name {
-  color: rgb(42, 236, 250);
+  color: var(--app-blue);
   font-weight: 700;
 }
 .add-form {
@@ -152,11 +158,11 @@ button {
   max-width: 65vw;
 }
 .book-details {
-  border: 1px solid black;
+  border: 2px solid var(--app-blue);
   border-radius: 8px;
-  margin: 20px;
-  padding: 10px;
-  background: rgb(206, 204, 204);
+  margin: 25px;
+  padding: 20px;
+  color: white;
 }
 #details-button-section {
   display: flex;
@@ -172,7 +178,7 @@ button {
   text-align: justify;
   color: whitesmoke;
   font-size: 22px;
-  border: 2px solid white;
+  border: 2px solid var(--app-blue);
   border-radius: 8px;
   padding: 18px 25px;
 }
