@@ -1,9 +1,15 @@
+
+
 body {
   background-color: rgb(72, 84, 84);
 }
 
 a {
   text-decoration: none;
+  color: white;
+}
+
+label {
   color: white;
 }
 button {
@@ -21,33 +27,61 @@ button {
 .library {
   border: 2px solid black;
   border-radius: 10px;
-  max-width: 150px;
-  margin: 20px;
+  max-width: 200px;
+  margin: 55px;
   text-align: center;
-  background: skyblue;
+  background: rgb(42, 236, 250);
+}
+
+.library a {
+  color: black;
+}
+
+.library a:hover {
+  border: 2px solid white;
 }
 
 .title {
   font-style: italic;
-  margin-right: 15px;
 }
+
 .catalogue {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  margin: 10px;
-  margin-right: 25px;
-
+  margin: 50px 25px 10px 10px;
+  border-right: 2px solid white;
 }
+#catalogue-text {
+  color: white;
+  text-align: center;
+  margin-top: 50px;
+  font-weight: normal;
+}
+.book:hover {
+  border: 2px solid white;
+  margin-right: 45px;
+}
+
 .book {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: fit-content;
-  min-width: 400px;
-  margin: 2px 20px;
+  min-width: 375px;
+  margin: 2px 30px;
   border: 1px solid black;
   border-radius: 4px;
   padding: 2px 12px;
+}
+
+.book .title {
+  margin-right: 38px;
+  font-size: 22px;
+}
+
+.book .author {
+  font-size: 18px;
 }
 .black {
   background: linear-gradient(rgb(66, 66, 66), rgb(24, 22, 22));
@@ -96,13 +130,26 @@ button {
 }
 
 .app-name {
-  color: rgb(109, 209, 216);
+  color: rgb(42, 236, 250);
   font-weight: 700;
 }
 .add-form {
   display: flex;
   flex-direction: column;
   padding: 10px;
+}
+.add-form label {
+  margin: 10px;
+}
+.add-form input {
+  height: 20px;
+  padding: 8px;
+  max-width: 65vw;
+
+}
+.add-form textarea {
+  margin: 10px;
+  max-width: 65vw;
 }
 .book-details {
   border: 1px solid black;
@@ -111,17 +158,23 @@ button {
   padding: 10px;
   background: rgb(206, 204, 204);
 }
-#button-section {
+#details-button-section {
   display: flex;
   justify-content: flex-end;
   margin-right: 35px;
 }
-#about-info {
-  margin: 30px;
-  padding: 10px;
+#leave-it-button-section {
+  display: flex;
+  justify-content: flex-end;
+}
+.add-form, #about-info {
+  margin: 30px 45px;
   text-align: justify;
   color: whitesmoke;
-  font-size: 18px;
+  font-size: 22px;
+  border: 2px solid white;
+  border-radius: 8px;
+  padding: 18px 25px;
 }
 
 @media screen and (max-width: 375px) {
@@ -129,10 +182,10 @@ button {
     max-width: 350px;
     min-width: 275px
   }
-  .title {
-    font-size: 16px;
+  .book .title {
+    font-size: 14px;
   }
-  .author {
-    font-size: 10px;
+  .book .author {
+    font-size: 9px;
   }
 }

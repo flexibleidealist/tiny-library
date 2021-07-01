@@ -28,7 +28,7 @@ function BookDetails(props) {
         <h4>Here's what a neighbor says about this book:</h4>
         <p>{bookToDisplay.fields.recommendation}</p>
       </section>
-      <section id="button-section">
+      <section id="details-button-section">
         <button onClick={backToCatalogue}>Back to Catalogue</button>
         <button onClick={deleteBook}>Take It!</button>
       </section>
