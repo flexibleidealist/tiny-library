@@ -29,6 +29,11 @@ button:hover {
   background-color: var(--app-blue);
   color: black;
 }
+
+.nav-area {
+  display: flex;
+  justify-content: flex-end;
+}
 .nav-menu {
   display: flex;
   justify-content: flex-end;
@@ -41,7 +46,9 @@ button:hover {
   font-weight: 800;
   color: var(--app-blue)
 }
-
+.nav-menu a:hover {
+  color: white;
+}
 #library-menu-area {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -222,6 +229,10 @@ button:hover {
 }
 
 @media screen and (max-width: 375px) {
+  .nav-menu {
+    flex-direction: column;
+  }
+  
   .book {
     max-width: 350px;
     min-width: 275px

@@ -1,14 +1,14 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect  } from "react";
 import { Link } from "react-router-dom";
 
 function Book(props) {
   const [color, setColor] = useState("");
-  
+  let initial = props.book.fields.author.charAt(0).toUpperCase();
+
   useEffect(() => { 
-    const colors = ["green", "orange", "light-green", "tan", "red-brown", "light-blue", "black", "blue", "brown", "red", "purple", "gray"];
-    const initial = props.book.fields.author.charAt(0).toUpperCase();
+    const colors = ["red", "orange", "light-green", "tan", "red-brown", "light-blue", "green", "blue", "brown", "black", "purple", "gray"];
     if (initial === "A" || "B") { 
-      setColor(colors[4]); 
+      setColor(colors[0]); 
     } else if (initial === "C" || "D") {
       setColor(colors[1]);
     } else if (initial === "E" || "F") {
@@ -33,10 +33,7 @@ function Book(props) {
       setColor(colors[11]);
     } else { setColor(colors[6]);
     } 
-  }, [props.book.key]);
-  
-    
-  
+  }, [initial]);
   
   // render each book on the catalogue display, showing title, author info
   // clickable link to details page for that particular book
