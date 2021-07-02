@@ -44,7 +44,7 @@ function NewLibraryForm(props) {
       value={location} 
       onChange={(e)=>setLocation(e.target.value)}
       />
-      <label htmlFor="address">Location: </label>
+      <label htmlFor="address">Zip Code: </label>
       <input 
       type="text"
       id="address"

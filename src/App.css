@@ -257,5 +257,8 @@ button:hover {
     box-sizing: border-box;
 
   }
+  .add-form textarea {
+    min-height: 50px;
+  }
 
 }
