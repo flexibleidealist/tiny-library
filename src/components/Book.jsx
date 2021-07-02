@@ -3,37 +3,36 @@ import { Link } from "react-router-dom";
 
 function Book(props) {
   const [color, setColor] = useState("");
-  let initial = props.book.fields.author.charAt(0).toUpperCase();
-
   useEffect(() => { 
+    let initial = props.book.fields.author.charAt(0).toUpperCase();
     const colors = ["red", "orange", "light-green", "tan", "red-brown", "light-blue", "green", "blue", "brown", "black", "purple", "gray"];
-    if (initial === "A" || "B") { 
+    if (initial === "A" || initial === "B") { 
       setColor(colors[0]); 
-    } else if (initial === "C" || "D") {
+    } else if (initial === "C" || initial === "D") {
       setColor(colors[1]);
-    } else if (initial === "E" || "F") {
+    } else if (initial === "E" || initial === "F") {
       setColor(colors[2]);
-    } else if (initial === "G" || "H") {
+    } else if (initial === "G" || initial === "H") {
       setColor(colors[3]);
-    } else if (initial === "I" || "J") {
+    } else if (initial === "I" || initial === "J") {
       setColor(colors[4]);
-    } else if (initial === "K" || "L") {
+    } else if (initial === "K" || initial === "L") {
       setColor(colors[5]);
-    } else if (initial === "M" || "N") {
+    } else if (initial === "M" || initial ===  "N") {
       setColor(colors[6]);
-    } else if (initial === "O" || "P") {
+    } else if (initial === "O" || initial === "P") {
       setColor(colors[7]);
-    } else if (initial === "Q" || "R") {
+    } else if (initial === "Q" || initial === "R") {
       setColor(colors[8]);
-    } else if (initial === "S" || "T") {
+    } else if (initial === "S" || initial === "T") {
       setColor(colors[9]);
-    } else if (initial === "U" || "V") {
+    } else if (initial === "U" || initial === "V") {
       setColor(colors[10]);
-    } else if (initial === "W" || "X" || "Y" || "Z") {
+    } else if (initial === "W" || initial === "X" || initial === "Y" || initial === "Z") {
       setColor(colors[11]);
     } else { setColor(colors[6]);
     } 
-  }, [initial]);
+  },[props.book.fields.author]);
   
   // render each book on the catalogue display, showing title, author info
   // clickable link to details page for that particular book

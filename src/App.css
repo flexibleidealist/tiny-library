@@ -82,13 +82,13 @@ button:hover {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  margin: 50px 25px 10px 10px;
+  margin: 35px 25px 10px 10px;
   border-right: 2px solid white;
 }
 #catalogue-text {
   color: white;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 25px;
   font-weight: normal;
 }
 .book:hover {

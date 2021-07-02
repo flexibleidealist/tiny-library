@@ -36,13 +36,13 @@ function App() {
         <NavMenu />
       </section>
       <main>
+      <Route exact path="/">
         <section id="library-menu-area">
-          <Route exact path="/">
             {libraries.map((library) => (
             <Library key={library.id} library={library}/>
             ))}
-          </Route>
-        </section>
+          </section>
+        </Route>
         <Route path="/add/:id">
           <AddForm libraries={libraries} setToggleFetch={setToggleFetch} />
         </Route>
