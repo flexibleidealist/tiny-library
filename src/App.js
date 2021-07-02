@@ -4,6 +4,7 @@ import Library from "./components/Library";
 import NavMenu from "./components/NavMenu";
 import Catalogue from "./components/Catalogue";
 import AddForm from './components/AddForm';
+import NewLibraryForm from './components/NewLibraryForm';
 import BookDetails from './components/BookDetails';
 import axios from "axios";
 import './App.css';
@@ -27,7 +28,7 @@ function App() {
       setLibraries(respLibraries.data.records);
     }
     fetchLibraries();
-  }, []);
+  }, [toggleFetch]);
 
   return (
     <div>
@@ -35,13 +36,15 @@ function App() {
         <NavMenu />
       </section>
       <main>
-        <Route exact path="/">
-          {libraries.map((library) => (
+        <section id="library-menu-area">
+          <Route exact path="/">
+            {libraries.map((library) => (
             <Library key={library.id} library={library}/>
-          ))}
-        </Route>
-        <Route path="/add">
-          <AddForm setToggleFetch={setToggleFetch} />
+            ))}
+          </Route>
+        </section>
+        <Route path="/add/:id">
+          <AddForm libraries={libraries} setToggleFetch={setToggleFetch} />
         </Route>
         <Route path="/about">
           <div id="about-info">
@@ -56,6 +59,9 @@ function App() {
         </Route>
         <Route path="/book/:id">
           <BookDetails setToggleFetch={setToggleFetch} books={books}/>
+        </Route>
+        <Route path="/new-library">
+          <NewLibraryForm setToggleFetch={setToggleFetch}/>
         </Route>
       </main>
     </div>

@@ -5,10 +5,35 @@ function Book(props) {
   const [color, setColor] = useState("");
   
   useEffect(() => { 
-    const colors = ["green", "light-green", "tan", "red-brown", "light-blue", "black", "blue", "brown", "red", "purple", "gray"]
-    const randomIndex = Math.floor(Math.random() * colors.length);
-    setColor(colors[randomIndex]);
-  }, [])
+    const colors = ["green", "orange", "light-green", "tan", "red-brown", "light-blue", "black", "blue", "brown", "red", "purple", "gray"];
+    const initial = props.book.fields.author.charAt(0).toUpperCase();
+    if (initial === "A" || "B") { 
+      setColor(colors[4]); 
+    } else if (initial === "C" || "D") {
+      setColor(colors[1]);
+    } else if (initial === "E" || "F") {
+      setColor(colors[2]);
+    } else if (initial === "G" || "H") {
+      setColor(colors[3]);
+    } else if (initial === "I" || "J") {
+      setColor(colors[4]);
+    } else if (initial === "K" || "L") {
+      setColor(colors[5]);
+    } else if (initial === "M" || "N") {
+      setColor(colors[6]);
+    } else if (initial === "O" || "P") {
+      setColor(colors[7]);
+    } else if (initial === "Q" || "R") {
+      setColor(colors[8]);
+    } else if (initial === "S" || "T") {
+      setColor(colors[9]);
+    } else if (initial === "U" || "V") {
+      setColor(colors[10]);
+    } else if (initial === "W" || "X" || "Y" || "Z") {
+      setColor(colors[11]);
+    } else { setColor(colors[6]);
+    } 
+  }, [props.book.key]);
   
     
   

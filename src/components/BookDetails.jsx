@@ -11,11 +11,11 @@ function BookDetails(props) {
     await axios.delete(specificURL, config);
     props.setToggleFetch((curr)=> !curr);
     setTimeout(() => {
-      history.push("/library-catalogue");
+      history.push(`/library-catalogue/${bookToDisplay.fields.libraries}`);
     }, 800);
   }
   const backToCatalogue = () => {
-      history.push("/library-catalogue");
+      history.push(`/library-catalogue/${bookToDisplay.fields.libraries}`);
     }
   
 

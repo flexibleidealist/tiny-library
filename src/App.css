@@ -1,9 +1,10 @@
 :root {
-  --app-blue: rgb(42, 236, 250);
+  --app-blue: rgb(38, 194, 242);
 }
 
 body {
-  background-color: rgb(49, 56, 56);
+  background-color: rgb(56, 53, 54);
+  font-family: 'Source Sans Pro', sans-serif;;
 }
 
 a {
@@ -22,27 +23,48 @@ button {
   padding: 8px;
   background: none;
   color: white;
+  font-size: 18px;
+}
+button:hover {
+  background-color: var(--app-blue);
+  color: black;
 }
 .nav-menu {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-end;
+  padding: 18px;
 }
 
+.nav-menu a {
+  margin: 0 20px;
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--app-blue)
+}
+
+#library-menu-area {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 25px;
+  box-sizing: border-box;
+}
 .library {
-  border: 2px solid var(--app-blue);
+  border: 2px solid var(--app-blue); 
   border-radius: 8px;
-  max-width: 200px;
-  margin: 55px;
+  box-sizing: border-box;
+  padding: 12px;
+  padding-top: 22px;
+  min-width: 200px;
+  max-width: 275px;
+  min-height: 150px;
+  margin: 20px;
   text-align: center;
   color: white;
 }
 
-.library a {
-  color: white;
-}
-
-.library a:hover {
-  color: var(--app-blue);
+.library:hover {
+  background-color: var(--app-blue);
+  color: black;
 }
 
 .title {
@@ -95,7 +117,7 @@ button {
   color: rgb(250, 199, 33);
 }
 .green {
-  background: linear-gradient(rgb(55, 76, 55), rgb(65, 76, 65));
+  background: linear-gradient(rgb(69, 116, 69), rgb(45, 63, 45));
   color: rgb(255, 196, 0);
 }
 .light-green {
@@ -134,25 +156,28 @@ button {
   background: linear-gradient(rgb(196, 182, 163), rgb(161, 136, 102));
   color: black;
 }
-
+.orange {
+  background: linear-gradient(rgb(196, 102, 51), rgb(142, 58, 13));
+  color: black;
+}
 .app-name {
   color: var(--app-blue);
   font-weight: 700;
 }
-.add-form {
+.add-form, .new-library-form {
   display: flex;
   flex-direction: column;
   padding: 10px;
 }
-.add-form label {
+.add-form label, .new-library-form label  {
   margin: 10px;
 }
-.add-form input {
+.add-form input, .new-library-form input {
   height: 20px;
   padding: 8px;
   max-width: 65vw;
-
 }
+
 .add-form textarea {
   margin: 10px;
   max-width: 65vw;
@@ -169,11 +194,24 @@ button {
   justify-content: flex-end;
   margin-right: 35px;
 }
-#leave-it-button-section {
+.leave-it-button-section, #leave-a-book-button-section {
   display: flex;
   justify-content: flex-end;
 }
-.add-form, #about-info {
+
+#leave-a-book-button {
+  margin: 0 45px 0 10px;
+  height: 50px;
+  min-width: 100px;
+  font-size: 18px;
+  font-weight: 700;
+}
+#leave-a-book-button:hover {
+  background-color: var(--app-blue);
+  color: black;
+}
+
+.add-form, .new-library-form, #about-info {
   margin: 30px 45px;
   text-align: justify;
   color: whitesmoke;
@@ -194,4 +232,16 @@ button {
   .book .author {
     font-size: 9px;
   }
+  .library {
+    width: 70vw;
+  }
+  #library-menu-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    box-sizing: border-box;
+
+  }
+
 }
