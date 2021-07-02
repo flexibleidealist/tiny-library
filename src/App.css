@@ -227,7 +227,10 @@ button:hover {
   border-radius: 8px;
   padding: 18px 25px;
 }
-
+#neighbor-recommendation {
+  padding: 10px;
+  color: var(--app-blue);
+}
 @media screen and (max-width: 375px) {
   .nav-menu {
     flex-direction: column;
@@ -241,7 +244,7 @@ button:hover {
     font-size: 14px;
   }
   .book .author {
-    font-size: 9px;
+    font-size: 11px;
   }
   .library {
     width: 70vw;

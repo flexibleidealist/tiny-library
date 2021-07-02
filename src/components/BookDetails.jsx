@@ -24,9 +24,9 @@ function BookDetails(props) {
     <div >
       <section className="book-details">
         <h2 className="title">{bookToDisplay.fields.title}</h2>
-        <h3>by {bookToDisplay.fields.author}</h3>
+        <h3 style={{margin:10}}>by {bookToDisplay.fields.author}</h3>
         <h4>Here's what a neighbor says about this book:</h4>
-        <p>{bookToDisplay.fields.recommendation}</p>
+        <p id="neighbor-recommendation">&ldquo;{bookToDisplay.fields.recommendation}&rdquo;</p>
       </section>
       <section id="details-button-section">
         <button onClick={backToCatalogue}>Back to Catalogue</button>
