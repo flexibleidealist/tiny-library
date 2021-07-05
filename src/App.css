@@ -25,10 +25,7 @@ button {
   color: white;
   font-size: 18px;
 }
-button:hover {
-  background-color: var(--app-blue);
-  color: black;
-}
+
 
 .nav-area {
   display: flex;
@@ -69,10 +66,6 @@ button:hover {
   color: white;
 }
 
-.library:hover {
-  background-color: var(--app-blue);
-  color: black;
-}
 
 .title {
   font-style: italic;
@@ -91,11 +84,7 @@ button:hover {
   margin-top: 25px;
   font-weight: normal;
 }
-.book:hover {
-  border: 2px solid white;
-  margin-right: 40px;
-  transition: all;
-}
+
 
 .book {
   display: flex;
@@ -231,6 +220,24 @@ button:hover {
   padding: 10px;
   color: var(--app-blue);
 }
+
+@media screen and (min-width: 376px) {
+  .book:hover {
+    border: 2px solid white;
+    margin-right: 40px;
+    transition: all;
+  }
+
+  .library:hover {
+  background-color: var(--app-blue);
+  color: black;
+  }
+  button:hover {
+    background-color: var(--app-blue);
+    color: black;
+  }
+}
+
 @media screen and (max-width: 375px) {
   .nav-menu {
     flex-direction: column;
@@ -248,6 +255,8 @@ button:hover {
   }
   .library {
     width: 70vw;
+    background-color: var(--app-blue);
+    color: black;
   }
   #library-menu-area {
     display: flex;
