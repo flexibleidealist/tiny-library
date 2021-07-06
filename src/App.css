@@ -164,7 +164,7 @@ button {
 }
 .gray {
   background: linear-gradient(rgb(138, 136, 136), rgb(37, 36, 36));
-  color: black;
+  color: rgb(250, 199, 33);
 }
 .tan {
   background: linear-gradient(rgb(196, 182, 163), rgb(161, 136, 102));
