@@ -78,13 +78,12 @@ button {
   min-width: 250px;
   max-width: 300px;
   min-height: 150px;
-  margin: 18px 0;
+  margin: 18px 5px;
   text-align: center;
   color: white;
   background-color: rgb(56, 53, 54);
 
 }
-
 
 .title {
   font-style: italic;
@@ -135,16 +134,16 @@ button {
   color: rgb(255, 196, 0);
 }
 .light-green {
-  background: linear-gradient(rgb(131, 180, 131), rgb(93, 109, 93));
+  background: linear-gradient(rgb(143, 208, 143), rgb(60, 104, 60));
   color: black;
 }
 .blue {
-  background: linear-gradient(rgb(122, 122, 252), rgb(40, 40, 122));
-  color: rgb(253, 223, 166);
+  background: linear-gradient(rgb(96, 96, 255), rgb(29, 29, 123));
+  color: rgb(249, 175, 38);
 }
 .light-blue {
-  background: linear-gradient(rgb(144, 144, 213), rgb(80, 80, 198));
-  color: rgb(250, 249, 248);
+  background: linear-gradient(rgb(169, 206, 237), rgb(71, 127, 211));
+  color: black;
 }
 .brown {
   background: linear-gradient(rgb(157, 114, 35), rgb(116, 68, 5));
@@ -155,7 +154,7 @@ button {
   color: whitesmoke;
 }
 .red {
-  background: linear-gradient( rgb(245, 64, 64), rgb(131, 22, 22));
+  background: linear-gradient( rgb(245, 64, 64), rgb(126, 13, 13));
   color: rgb(221, 220, 220);
 }
 .purple {
@@ -167,7 +166,7 @@ button {
   color: rgb(250, 199, 33);
 }
 .tan {
-  background: linear-gradient(rgb(196, 182, 163), rgb(161, 136, 102));
+  background: linear-gradient(rgb(196, 182, 163), rgb(143, 112, 69));
   color: black;
 }
 .orange {
@@ -272,14 +271,15 @@ button {
     margin-left: 10px;
   }
   .book {
-    max-width: 350px;
-    min-width: 275px
+    max-width: 368px;
+    min-width: 275px;
+    margin: 2px 12px;
   }
   .book .title {
-    font-size: 14px;
+    font-size: 15px;
   }
   .book .author {
-    font-size: 11px;
+    font-size: 12px;
   }
   .library {
     width: 70vw;
