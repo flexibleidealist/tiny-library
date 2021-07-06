@@ -78,8 +78,8 @@ Sample json from Airtable database:
 |---|---| ---|
 |June 28| Prepare project pitch and Readme; Set up Airtable Database | Complete
 |June 29| Project Approval; pseudo-code and begin coding basic structure | Complete
-|June 30-July 1| Complete code and debugging; CSS styling  | Incomplete
-|July 2| Moring: finish CSS tweaks; Deploy by 12:30 | Incomplete
+|June 30-July 1| Complete code and debugging; CSS styling  | Complete
+|July 2| Moring: finish CSS tweaks; Deploy by 12:30 | Complete
 |July 7| Presentation  | Incomplete
 
 
@@ -90,12 +90,13 @@ Sample json from Airtable database:
 | Pseudocoding & coding basic app | H | 3hrs| 4 hrs  | 4.5 hrs |
 | Basic CSS | H | 1 hr| 1 hr | 1 hr |
 | Debugging | H | 2 hrs| 3 hrs | 3 hrs |
-| More refined CSS | M | 2.5 hrs|  |  |
-| Add Libraries table in database and link books to libraries (post-MVP) | H | 3 hrs|  |  |
+| More refined CSS | M | 2.5 hrs| 3 hrs | 3 hrs |
+| Add Libraries table in database and link books to libraries (post-MVP) | H | 3 hrs| 2 hrs | 2 hrs |
+| Research map APIs (post-MVP) | M | 1.5 hrs|  |  |
 | Add Map feature (post-MVP) | M | 3 hrs|  |  |
-| Researching a 2nd API (post-MVP) | L | 1 hr|  |  |
+| Researching a 2nd API (post-MVP) | L | 1 hr| 1 hr |  |
 | Adding 2nd API for additional information and search feature (post-MVP) | L | 3 hrs |  |  |
-| Total |  | 15.5 hrs|  |  |
+| Total |  | 19 hrs|  |  |
 
 ## SWOT Analysis
 
