@@ -51,10 +51,10 @@ function App() {
         </Route>
         <Route path="/about">
           <div id="about-info">
-            <p><span className="app-name">tiny library</span> is a neighborhood-based book sharing program. Anyone can donate or take books for free.</p>
+            <p><span className="app-name">tiny library</span> is a neighborhood book sharing program. Anyone can donate or take books for free.</p>
             <p>Click on a library location to browse a catalogue of the books currently in that library.</p>
             <p>When you donate a book, follow the "Leave a Book!" link, fill out the form, and click "Leave It!" to add your donation to the catalogue.</p>
-            <p>When you take a book home, click on the "Take It!" button on the book's details page to delete it from the catalogue.</p>
+            <p>When you take a book home, click the "Take It!" button on the book's details page to delete it from the catalogue.</p>
             <p>If you would like to start a new <span className="app-name">tiny library</span>, follow the New Library link and fill out the form to add your library to the menu.</p>
           </div>
         </Route>
