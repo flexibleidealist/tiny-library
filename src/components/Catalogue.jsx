@@ -1,9 +1,11 @@
 import Book from "./Book";
 import { Link, useParams } from "react-router-dom";
+import { sortByCreatedTime } from "../services"
 
 function Catalogue(props) {
   const params = useParams();
   const localBooks = props.books.filter((book) => book.fields.libraries[0] === params.id);
+  sortByCreatedTime(localBooks);
   return (
     <div>
       <section id="leave-a-book-button-section">

@@ -9,6 +9,8 @@ import BookDetails from './components/BookDetails';
 import axios from "axios";
 import './App.css';
 import { baseURL, config } from './services';
+import { sortByCreatedTime } from "./services";
+
 
 function App() {
   const [books, setBooks] = useState([]);
@@ -28,7 +30,8 @@ function App() {
       setLibraries(respLibraries.data.records);
     }
     fetchLibraries();
-  }, [toggleFetch]);
+    sortByCreatedTime(libraries);
+  }, [toggleFetch, libraries]);
 
   return (
     <div>
