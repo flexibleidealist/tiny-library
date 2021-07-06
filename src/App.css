@@ -239,6 +239,7 @@ button {
 #neighbor-recommendation {
   padding: 10px;
   color: var(--app-blue);
+  font-size: 22px;
 }
 
 @media screen and (min-width: 426px) {
@@ -261,6 +262,10 @@ button {
 @media screen and (max-width: 425px) {
   .nav-menu {
     flex-direction: column;
+    align-items: flex-start;
+  }
+  #menu-button {
+    max-height: 40px;
   }
   #app-logo {
     font-size: 35px;
@@ -294,5 +299,8 @@ button {
   }
   #leave-a-book-button {
     margin-right: 30px;
+  }
+  #neighbor-recommendation {
+    font-size: 20px;
   }
 }

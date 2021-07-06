@@ -20,7 +20,7 @@ function NavMenu() {
   return (
     <div className="nav-area">
       <Link to="/"><h2 style={{display: hamburger? "none" : "block"}} id="app-logo">tiny library</h2></Link>
-      <button style={{display: visible ? "none" : "flex"}} onClick={()=> setHamburger(!hamburger)}>menu</button>
+      <button id="menu-button" style={{display: visible ? "none" : "flex"}} onClick={()=> setHamburger(!hamburger)}>menu</button>
       <div className="nav-menu" style={{display: visible || hamburger ? "flex" : "none"}}>
         <Link to="/">Library Menu</Link>
         <Link to="/new-library">Start A New Library</Link>
