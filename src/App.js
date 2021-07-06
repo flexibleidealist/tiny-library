@@ -55,6 +55,7 @@ function App() {
             <p>Click on a library to browse a catalogue of the books currently in the library.</p>
             <p>When you donate a book, follow the "Leave a Book!" link, fill out the form, and click "Leave It!" to add your donation to the catalogue.</p>
             <p>When you take a book home, click on the "Take it!" button on the book's details page to delete it from the catalogue.</p>
+            <p>If you would like to start a new <span className="app-name">tiny library</span>, follow the New Library link and fill out the form to add your library to the menu.</p>
           </div>
         </Route>
         <Route path="/library-catalogue/:id">

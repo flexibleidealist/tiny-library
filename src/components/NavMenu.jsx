@@ -23,7 +23,7 @@ function NavMenu() {
       <button id="menu-button" style={{display: visible ? "none" : "flex"}} onClick={()=> setHamburger(!hamburger)}>menu</button>
       <div className="nav-menu" style={{display: visible || hamburger ? "flex" : "none"}}>
         <Link to="/">Library Menu</Link>
-        <Link to="/new-library">Start A New Library</Link>
+        <Link to="/new-library">New Library</Link>
         <Link to="/about">About</Link>
       </div>
     </div>
