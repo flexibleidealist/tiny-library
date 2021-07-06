@@ -5,7 +5,7 @@ function Book(props) {
   const [color, setColor] = useState("");
   useEffect(() => { 
     let initial = props.book.fields.author.charAt(0).toUpperCase();
-    const colors = ["red", "orange", "light-green", "tan", "red-brown", "light-blue", "green", "blue", "brown", "black", "purple", "gray"];
+    const colors = ["red", "black", "light-green", "blue", "red-brown", "light-blue", "green", "tan", "brown", "orange", "purple", "gray"];
     if (initial === "A" || initial === "B") { 
       setColor(colors[0]); 
     } else if (initial === "C" || initial === "D") {
@@ -30,7 +30,7 @@ function Book(props) {
       setColor(colors[10]);
     } else if (initial === "W" || initial === "X" || initial === "Y" || initial === "Z") {
       setColor(colors[11]);
-    } else { setColor(colors[6]);
+    } else { setColor(colors[9]);
     } 
   },[props.book.fields.author]);
   

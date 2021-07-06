@@ -29,27 +29,42 @@ button {
 
 .nav-area {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+  border-bottom: 1px solid white;
+
 }
 .nav-menu {
   display: flex;
   justify-content: flex-end;
-  padding: 18px;
+  padding: 15px;
+  padding-top: 15px;
 }
 
 .nav-menu a {
-  margin: 0 20px;
+  margin: 0 20px 0 10px;
   font-size: 20px;
   font-weight: 800;
-  color: var(--app-blue)
+  color: var(--app-blue);
+  white-space: nowrap;
+
 }
 .nav-menu a:hover {
   color: white;
 }
+
+#app-logo {
+  font-family: 'Asap', sans-serif;
+  color: var(--app-blue);
+  font-size: 60px;
+  white-space: nowrap;
+  margin: 6px 10px 10px 50px;
+
+}
 #library-menu-area {
   display: grid;
+  justify-items: center;
   grid-template-columns: repeat(2, 1fr);
-  padding: 25px;
+  padding: 10px 80px;
   box-sizing: border-box;
 }
 .library {
@@ -57,11 +72,11 @@ button {
   border-radius: 8px;
   box-sizing: border-box;
   padding: 12px;
-  padding-top: 22px;
-  min-width: 200px;
-  max-width: 275px;
+  padding-top: 25px;
+  min-width: 250px;
+  max-width: 300px;
   min-height: 150px;
-  margin: 20px;
+  margin: 18px 0;
   text-align: center;
   color: white;
 }
@@ -84,7 +99,6 @@ button {
   margin-top: 25px;
   font-weight: normal;
 }
-
 
 .book {
   display: flex;
@@ -159,6 +173,8 @@ button {
 .app-name {
   color: var(--app-blue);
   font-weight: 700;
+  font-family: 'Asap', sans-serif;
+
 }
 .add-form, .new-library-form {
   display: flex;
@@ -196,10 +212,10 @@ button {
 }
 
 #leave-a-book-button {
-  margin: 0 45px 0 10px;
+  margin: 15px 60px 0 25px;
   height: 50px;
-  min-width: 100px;
-  font-size: 18px;
+  min-width: 90px;
+  font-size: 16px;
   font-weight: 700;
 }
 #leave-a-book-button:hover {
@@ -221,7 +237,7 @@ button {
   color: var(--app-blue);
 }
 
-@media screen and (min-width: 376px) {
+@media screen and (min-width: 426px) {
   .book:hover {
     border: 2px solid white;
     margin-right: 40px;
@@ -238,11 +254,14 @@ button {
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 425px) {
   .nav-menu {
     flex-direction: column;
   }
-  
+  #app-logo {
+    font-size: 35px;
+    margin-left: 10px;
+  }
   .book {
     max-width: 350px;
     min-width: 275px
