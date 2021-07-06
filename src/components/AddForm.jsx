@@ -59,7 +59,7 @@ function AddForm(props) {
         onChange={(e)=> setRecommendation(e.target.value)}
       />
       <section className="leave-it-button-section">
-      <button type="submit">Leave it!</button>
+      <button type="submit">Leave It!</button>
       </section>
     </form>
   )
