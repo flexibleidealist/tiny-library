@@ -80,7 +80,7 @@ Sample json from Airtable database:
 |June 29| Project Approval; pseudo-code and begin coding basic structure | Complete
 |June 30-July 1| Complete code and debugging; CSS styling  | Complete
 |July 2| Moring: finish CSS tweaks; Deploy by 12:30 | Complete
-|July 7| Presentation  | Incomplete
+|July 7| Presentation  | Complete
 
 
 ## Timeframes
@@ -95,7 +95,7 @@ Sample json from Airtable database:
 | Research map APIs (post-MVP) | M | 1.5 hrs|  |  |
 | Add Map feature (post-MVP) | M | 3 hrs|  |  |
 | Researching a 2nd API (post-MVP) | L | 1 hr| 1 hr |  |
-| Adding 2nd API for additional information and search feature (post-MVP) | L | 3 hrs |  |  |
+| Adding 2nd API for additional information and search feature (post-MVP) | L | 3 hrs | 1 hr |  |
 | Total |  | 19 hrs|  |  |
 
 ## SWOT Analysis
