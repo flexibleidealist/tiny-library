@@ -94,7 +94,7 @@ Sample json from Airtable database:
 | Add Libraries table in database and link books to libraries (post-MVP) | H | 3 hrs| 2 hrs | 2 hrs |
 | Research map APIs (post-MVP) | M | 1.5 hrs|  |  |
 | Add Map feature (post-MVP) | M | 3 hrs|  |  |
-| Researching a 2nd API (post-MVP) | L | 1 hr| 1 hr |  |
+| Researching a 2nd API (post-MVP) | L | 1 hr| 1 hr | 1hr |
 | Adding 2nd API for additional information and search feature (post-MVP) | L | 3 hrs | 1 hr | 2 hrs |
 | Total |  | 19 hrs|  |  |
 
