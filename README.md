@@ -1,13 +1,14 @@
 <!-- CODENAME: BANANA -->
 # Project Overview
 
-## Project Name
-
 Tiny Library App
+
+see the deployed app here: https://tiny-library.netlify.app/
 ## Project Description
 
-This app will create a catalogue for a Tiny Library where users can donate or take books. Using an Airtable API, the app will allow users to: 
-- browse a catalogue of books in the Tiny Library
+This app creates a catalogue for a Tiny Library where users can donate or take books. The front end is build with React and uses an Airtable API and database. The app allows users to: 
+- browse a list of Tiny Library locations
+- browse a catalogue of books in each Tiny Library
 - add a record when they donate a book to the Tiny Library
 - delete a record when they take a book from the Library
 ## Wireframes
@@ -73,7 +74,6 @@ Sample json from Airtable database:
 
 ## Project Schedule
 
-
 |  Day | Deliverable | Status
 |---|---| ---|
 |June 28| Prepare project pitch and Readme; Set up Airtable Database | Complete
@@ -83,20 +83,6 @@ Sample json from Airtable database:
 |July 7| Presentation  | Complete
 
 
-## Timeframes
-
-| Task | Priority | Estimated Time | Time Invested | Actual Time |
-| --- | :---: |  :---: | :---: | :---: |
-| Pseudocoding & coding basic app | H | 3hrs| 4 hrs  | 4.5 hrs |
-| Basic CSS | H | 1 hr| 1 hr | 1 hr |
-| Debugging | H | 2 hrs| 3 hrs | 3 hrs |
-| More refined CSS | M | 2.5 hrs| 3 hrs | 3 hrs |
-| Add Libraries table in database and link books to libraries (post-MVP) | H | 3 hrs| 2 hrs | 2 hrs |
-| Research map APIs (post-MVP) | M | 1.5 hrs|  |  |
-| Add Map feature (post-MVP) | M | 3 hrs|  |  |
-| Researching a 2nd API (post-MVP) | L | 1 hr| 1 hr | 1hr |
-| Adding 2nd API for additional information and search feature (post-MVP) | L | 3 hrs | 1 hr | 2 hrs |
-| Total |  | 19 hrs|  |  |
 
 ## SWOT Analysis
 
